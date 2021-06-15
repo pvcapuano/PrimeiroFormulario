@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css" type="text/css">
     <title>Formulário</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
 
         <div class="campo">
             <label for="senioridade"><strong>Senioridade</strong></label>
-            <select id="senioridade">
+            <select id="senioridade" required>
             <option selected disabled value="">Selecione</option>
             <option>Junior</option>
             <option>Pleno</option>
@@ -56,7 +56,7 @@
         </div>
 
         <fieldset class="grupo">
-            <div class="campo">
+            <div id="check">
                 <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
@@ -75,13 +75,13 @@
             </div>
         </fieldset>
 
-        <div>
+        <div class="campo">
             <br>
-            <label><strong>Conte um pouco da sua experiência:</label></strong> 
+            <label for="experiencia"><strong>Conte um pouco da sua experiência:</label></strong>
             <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em"></textarea>
         </div>
 
-        <button type="submit" class="botao">Concluído</button> 
+        <button type="submit" class="botao" onsubmit="">Concluído</button> 
     </form>
 
 </body>
